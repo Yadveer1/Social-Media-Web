@@ -1,0 +1,105 @@
+@import "tailwindcss";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.App {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 300px;
+}
+
+.login-card h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.login-card p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.google-login-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+.user-info {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.user-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.user-details h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.user-details p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.dashboard-content {
+  padding: 2rem;
+  text-align: center;
+}

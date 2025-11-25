@@ -1,0 +1,28 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore build output
+dist/
+build/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore uploads content but keep the folder tracked
+uploads/**
+!uploads/.gitkeep
+
+# Ignore local HTTP requests file used by REST clients
+api.http

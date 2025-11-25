@@ -1,8 +1,4 @@
-/**
- * API utility functions for making authenticated requests to the backend
- */
-
-const API_URL = import.meta.env.VITE_API_URL;
+import {API_BASE_URL} from './constants.js';
 
 /**
  * Get authorization headers with token
@@ -24,7 +20,7 @@ export const getAuthHeaders = (token) => {
  * @returns {Promise<Object>} - Response data
  */
 export const apiRequest = async (endpoint, options = {}, token = null) => {
-  const url = `${API_URL}${endpoint}`;
+  const url = `${API_BASE_URL}${endpoint}`;
   
   const config = {
     ...options,
